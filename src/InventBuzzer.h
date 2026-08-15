@@ -18,11 +18,11 @@ class InventBuzzer {
 
  private:
   uint8_t _pin;
-  uint8_t _repeat;
-  uint16_t _duration;
-  uint32_t _buzzingTime;
-  bool _playing;
-  bool _stateBuzzer;
+  uint8_t _repeat = 0;
+  uint16_t _duration = 0;
+  uint32_t _buzzingTime = 0;
+  bool _playing = false;
+  bool _stateBuzzer = false;
 };
 
 #endif  // BUZZER_H
