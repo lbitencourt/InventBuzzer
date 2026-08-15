@@ -1,6 +1,6 @@
 /**
  * @file InventBuzzer.h
- * @brief Declaration of InventBuzzer class to control a buzzer device.
+ * @brief Declaration of IBuzzer interface and InventBuzzer class to control a buzzer device.
  * @author Leandro Bitencourt
  * @date jan 2026
  */
@@ -9,12 +9,20 @@
 
 #include <Arduino.h>
 
-class InventBuzzer {
+class IBuzzer {
+ public:
+  virtual ~IBuzzer() = default;
+  virtual void play(const uint8_t repeat, const uint16_t duration) = 0;
+  virtual void stop() = 0;
+  virtual void update() = 0;
+};
+
+class InventBuzzer : public IBuzzer {
  public:
   InventBuzzer(const uint8_t pin);
-  void play(const uint8_t repeat, const uint16_t duration);
-  void stop();
-  void update();
+  void play(const uint8_t repeat, const uint16_t duration) override;
+  void stop() override;
+  void update() override;
 
  private:
   uint8_t _pin;
