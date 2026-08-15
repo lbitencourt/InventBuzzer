@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 #include "InventBuzzer.h"
 
 InventBuzzer::InventBuzzer(const uint8_t pin) : _pin(pin) {

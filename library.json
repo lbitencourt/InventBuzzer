@@ -1,0 +1,19 @@
+{
+  "name": "Invent Buzzer",
+  "version": "1.1.1",
+  "description": "Biblioteca para controle de buzzer com repetição e duração",
+  "keywords": "buzzer",
+  "authors": [
+    {
+      "name": "Leandro Bitencourt",
+      "email": "bitcourt@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lbitencourt/InventBuzzer.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "*"
+}

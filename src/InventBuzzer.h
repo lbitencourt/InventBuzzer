@@ -7,7 +7,7 @@
 #ifndef BUZZER_H
 #define BUZZER_H
 
-#include <Arduino.h>
+#include <stdint.h>
 
 class IBuzzer {
  public:
