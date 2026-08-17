@@ -4,6 +4,7 @@
 
 InventBuzzer::InventBuzzer(const uint8_t pin) : _pin(pin) {
   pinMode(_pin, OUTPUT);
+  digitalWrite(_pin, LOW);
 }
 
 void InventBuzzer::play(const uint8_t repeat, const uint16_t duration) {
